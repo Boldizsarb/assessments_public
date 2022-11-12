@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Night Pulse Fest</h1>
+        <link href="/css/header.css" rel="stylesheet" type="text/css">
+      </header>
+    
+    <%- include("particles/navigation_bar.ejs") %>
+    <main>
+        <% if (error){ %>
+            <h2>Apology, we ran into a problem while adding your data to the database. Please try it agan.</h2>
+        <% } else { %>
+            <h2>Your query has been added, we will get back to you as soon as we can!</h2>
+        <% } %>
+    </main>
+
+
+
+</body>
+</html>

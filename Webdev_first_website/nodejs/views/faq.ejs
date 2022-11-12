@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
+    <link href="/css/faq.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked questions</h1>
+    </header>
+    
+    <%- include("particles/navigation_bar.ejs") %>
+    <main>
+        <ul>
+            <li id="covidbutton"><button>Covid Precautions</button></li>
+            <li id="environmentbutton"><button>Environment Precautions</button></li>
+            <li id="generalbutton"><button>General</button></li>
+        </ul>
+    <div id="output">
+
+    </div>
+
+    </main>
+    <script src="static/scripts/faq_ajax.js"></script>
+</body>
+</html> 

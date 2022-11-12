@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stages</title>
+</head>
+<body>
+    <header>
+        <link href="/css/header.css" rel="stylesheet" type="text/css">
+        <link href="/css/stages.css" rel="stylesheet" type="text/css">
+        <h1>Stages</h1>
+    </header>
+
+    <%- include("particles/navigation_bar.ejs") %>
+    <main>
+        <div>
+                <div id="column">
+                    <% result.forEach(row =>{ %>
+                        <p>
+                            <strong>Band:</strong> <%= row.name %> <br>
+                            <strong>Stage:</strong> <%= row.stage%> <br>
+                            <strong>Day:</strong> <%= row.time %> <br>
+                            <strong>At:</strong> <%= row.hour%>
+                        </p>
+                   <% }); %>
+                </div>
+               
+
+           
+        </div>
+
+
+    </main>
+    <script src="static/scripts/stages.js"></script>
+</body>
+</html>

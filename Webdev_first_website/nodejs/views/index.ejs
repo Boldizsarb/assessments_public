@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+
+<body>
+  <header>
+    <h1>Night Pulse Fest</h1>
+    <link href="/css/header.css" rel="stylesheet" type="text/css">
+    <link href="/css/index.css" rel="stylesheet" type="text/css">
+  </header>
+
+  <p id="day">July 29-30</p>
+
+    <%- include("particles/navigation_bar.ejs") %>
+    <main>
+       
+            
+            <h2>Have an insight, what will you be the part of!</h2>
+            
+          <div id="flexbox">
+            <div class="text">
+              <h3>What do I do?</h3>
+              <p><strong>You are the most important ingredient. </strong></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quo doloribus aliquam quidem, soluta ab, recusandae numquam vel nesciunt esse tempora blanditiis labore sed doloremque ut. Beatae nulla cum fugit.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ea doloremque alias. Iure autem cum officia perspiciatis, expedita vero quisquam aliquam aliquid reprehenderit assumenda, ad consequatur magnam porro voluptatum ipsa?</p> 
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nulla magnam fuga, sed iure iste officiis harum dicta dolor. Expedita vitae at provident blanditiis minus eius unde magnam sequi iusto?</p>
+              <h3>Where do you go?</h3>
+              <p><a target="_blank" href="https://www.google.com/maps/place/Southampton/@50.898554,-1.4411257,12.71z/data=!4m5!3m4!1s0x48738957be152909:0xa78c5a6a4cda71f0!8m2!3d50.9105468!4d-1.4049018">Southampton!!!!!</a></p>
+            </div>
+
+            <div class="slideshow_continer">
+              
+              <div class="slides1">
+                <img src="static/pictures/fest.jpg" alt="A picture of a fetival">
+              </div>
+            
+              <div class="slides1">
+                <img src="static/pictures/fest5.jpg" alt="A picture of poeple while on festival">
+              </div>
+            
+              <div class="slides1">
+                <img src="static/pictures/fest3.jpg" alt="A picture of people while on festival"> 
+              </div>
+
+              <div class="slides1">
+                <img src="static/pictures/fest4.jpg" alt="A picture of people at night">
+              </div>
+            
+
+              <div class="slides1">
+                <img src="static/pictures/fest2.jpg" alt="A picture of festival at night">
+              </div>
+            
+              <a class="prev" onclick="nextOne (-1, 0)">&#10096;</a>
+              <a class="next" onclick="nextOne (1, 0)">&#10097;</a>
+            </div>
+          </div>
+          <div id="flexbox2">
+            <div class="text">
+              <h3>Lin Up</h3>
+              <p>Red Hot Chilli Peppers · Arctic Monkeys · Nirvana · Chase Atlantic · The Cranberries · Pixies · Nine Inch Nails · The Neighborhood · Muse · The Killers · Gorillaz · Charlie XCX · K.Flay · Tame Impala ·  Linkin Park· Koffee · Frank Ocean · Tyler, The Creator · Beach house · The Jesus and Mary Chain ·</p>
+              <p> Wilco · Joy Division · Sons of Kemet · Doja Cat · Mike Peach · Gazzi · 100 GECS · Foals · Glass Animals · Billie Eilish · Clairo · Wet Leg · Supergrass · Sam Fender · Sampa the Great · Squid · Self Esteem · Cardi B · Little Simz · Lorde · Megan Thee Stallion · Mitski · Primal Scream · Black Midi · Artbat ·</p>
+              <p> The Martinez Brothers · SLANDER · IDLES · DJ Lord · Lawrence · Still Woozy · Daphni · Damian Lazarus · Peppy Gou · Gabe Real · John Summit · slowthai · TOKiMONSTA · Code Orange · The Chats · crudo · NIKI</p>
+              
+            </div>
+           
+            
+            <div class="slideshow_continer" id="second">
+              <div class="slides2">
+                <img src="static/pictures/brothers.jpeg" alt="A picture of brothers">
+              </div>
+              <div class="slides2">
+                <img src="static/pictures/damian.jpeg" alt="A picture of Damian Lazarus">
+              </div>
+              <div class="slides2">
+                <img src="static/pictures/artic.jpeg" alt="A picture of Artic Monkeys" >
+              </div>
+            
+              <div class="slides2">
+                <img src="static/pictures/pixies.jpeg" alt="A picture of Pixies">
+              </div>
+              <div class="slides2">
+                <img src="static/pictures/wozy.jpeg" alt="A picture of Woozy">
+              </div>
+              <div class="slides2">
+                <img src="static/pictures/toki.jpeg" alt="A picture of TOKiMONSTA">
+              </div>
+              <div class="slides2">
+                <img src="static/pictures/lord.jpeg" alt="A picture of Lord">
+              </div>
+            
+              <a class="prev" onclick="nextOne (-1, 1)">&#10096;</a>
+              <a class="next" onclick="nextOne (1, 1)">&#10097;</a>
+            </div>
+          </div>
+
+          
+          
+    </main>
+    <div id="cookieban">
+      <p>
+        Cokies are not for eating! Do not forget to attend on the Night Pulse Fest! Then you will have better to eat than cookie! 
+      </p>
+      <button id="cookiebut">X</button>
+    </div>
+    
+    <script src="static/scripts/indextwo.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+* {box-sizing: border-box}
+
+.slides1{
+    display: none;
+}
+.slides2{
+    display: none;
+}
+h2{
+    text-align:center
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+}
+            
+            /* Slideshow container */
+.slideshow_continer {
+    max-width: 40vh;
+    position: relative;
+    margin: auto;
+    }
+            
+ /* Buttons */
+.prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -1vh;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+    }
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -1vh;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 4px 4px 0;
+    user-select: none;
+    }
+            
+            /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 2px 0 0 2px;
+    }
+            
+            /* On hover, add a grey background color */
+    .prev:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+    #cookieban{
+        width: 100%;
+        height: 8vh;
+        background-color: #64175e;
+        position: fixed;
+        bottom: 0;
+        opacity: 0.8;
+        color: white;
+    }
+    #cookiebut{
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: 10px;
+        right: 10px;
+    }
+    #day{
+        max-width: 15vh;
+        max-height: 10vh;
+        
+        position: absolute;
+        display: block;
+        right: 10vh;
+        top: 0%;
+        font-size: 3vh;
+        color: rgb(232, 214, 214);
+
+        text-shadow: 0 2px 3px #747474, 
+              1px 3px 4px #222, 
+              0 8px 3px #474747, 
+              0 11px 4px #747474,
+              0 14px 4px #565656,
+              0 17px 4px #343434,
+              0 20px 4px #171717;
+    }
+    #second{
+        max-width: 40vh;
+    }
+    #flexbox{
+        display: flex;
+        justify-content: space-around;
+    }
+    .text{
+        width: 40vh;
+        padding: 9px;
+    }
+   
+#flexbox2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+
+}
+@media only screen and (max-width: 900px){
+    #flexbox{
+        flex-direction: column;
+    }
+    #flexbox2{
+       flex-direction: column;
+    }
+    .text{
+        flex-direction: column;
+        word-break: break-all;
+        overflow-wrap: break-word;
+
+        
+    }
+}

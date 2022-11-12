@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+</head>
+<body>
+    <header>
+        <link href="/css/header.css" rel="stylesheet" type="text/css">
+        <link href="/css/imgs.css" rel="stylesheet" type="text/css">
+        <h1>Puzzle</h1>
+    </header>
+    
+    <%- include("particles/navigation_bar.ejs") %>
+    <main>
+        
+        <h3 id="guess">Guess, which band is on the picture</h3>
+        <br>
+        <div id="container">
+            
+                <div>
+                    <img src="static/pictures/red_hot.jpeg" alt="A picture of a band" id="picture" onclick="showingName()">
+                    <p id="magic" class="nothing">Red Hot Chilli Peppers</p>
+                    <p id="hint" class="nothing">On stage 1, 29th of July at 16:50 </p>
+                </div>
+            <div>
+                <img src="static/pictures/artic.jpeg" alt="A picture of a band" id="picture2" onclick="showingName2()">
+                <p id="magic2" class="nothing">Artic Monkeys</p>
+                <p id="hint2" class="nothing">On Stage 3, 31st of July at 17:30</p>
+            </div>
+            <div>
+                <img src="static/pictures/nirvana.jpeg" alt="A picture of a band" id="picture3" onclick="showingName3()">
+                <p id="magic3" class="nothing">Nirvana</p>
+                <p id="hint3" class="nothing">On Stage 1, 29th of July at 21:30</p>
+            </div>
+            <div>
+                <img src="static/pictures/pixies.jpeg" alt="A picture of a band" id="picture4" onclick="showingName4()">
+                <p id="magic4" class="nothing">Pixies</p>
+                <p id="hint4" class="nothing">On Stage 3, 31st of July at 21:00</p>
+            </div>
+            <div>
+                <img src="static/pictures/linking.jpeg" alt="A picture of a band" id="picture5" onclick="showingName5()">
+                <p id="magic5" class="nothing">Linking Park</p>
+                <p id="hint5" class="nothing">On Stage 2, 31st of July at 23:00</p>
+            </div>
+            <div>
+                <img src="static/pictures/jesus.jpeg" alt="A picture of a band" id="picture6" onclick="showingName6()">
+                <p id="magic6" class="nothing">The Jesus and Mary Chain</p>
+                <p id="hint6" class="nothing">On Stage 3, 30th of July at 19:00</p>
+            </div>
+            <div>
+                <img src="static/pictures/damian.jpeg" alt="A picture of a band" id="picture7" onclick="showingName7()">
+                <p id="magic7" class="nothing">Damian Lazarus</p>
+                <p id="hint7" class="nothing">On Stage 1, 31st of July at 17:00</p>
+            </div>
+            <div>
+                <img src="static/pictures/black.jpeg" alt="A picture of a band" id="picture8" onclick="showingName8()">
+                <p id="magic8" class="nothing">Black Midi</p>
+                <p id="hint8" class="nothing">On Stage 2, 30th of July at 22:30</p>
+            </div>
+        </div>
+       
+
+
+
+
+
+
+    </main>
+    
+
+
+    <script src="static/scripts/puzzle.js"></script>
+</body>
+</html>

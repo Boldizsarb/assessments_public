@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <link href="/css/header.css" rel="stylesheet" type="text/css">
+        <link href="/css/contact.css" rel="stylesheet" type="text/css">
+    </header>
+
+    <%- include("particles/navigation_bar.ejs") %>
+    <main>
+        <h3>Should you have any questions, fill up the form and we will do our best to aswer it.</h3>
+        <p>Be aware, respond time is <strong>2-3 days</strong>.</p>
+        <p id="alternative"> Alternatively, check FAQ.</p>
+        <br>
+
+        
+
+        <form method="post" action="/contact" id="forma">
+            <!--Names, email, phone-->
+            <label  class="label"><strong>Firts Name:</strong></label><br>
+            <input id="resize" type="text" placeholder="Enter your name here." name="fname" class="input"><br><br>
+
+            <label  class="label" id="labelsname"><strong>Forename(s):</strong></label><br>
+            <input id="resize1" type="text" placeholder="Enter your Forename(s) here." name="sname" class="input"><br><br>
+            <label  class="label"><strong>Email Address:</strong></label><br>
+            <input id="resize2" type="email" class="input" name="email" placeholder="Example@gamil.com"><br><br>
+
+            <label  class="label"><strong>Phone Number:</strong></label><br>
+            <input id="resize3" type="tel" class="input" name="phone" placeholder="+07123456789"><br><br>
+            <!--Radio button-->
+            <p>Please select an option, how would you like us to get back to you.</p>
+
+            <input type="radio"  name="radio" value="email" id="em">
+            <label><strong>E-mail</strong></label><br>
+
+            <input type="radio" name="radio" value="WhatsApp" id="wh">
+            <label><strong>WhatsApp</strong></label><br>
+
+            <input type="radio" name="radio" value="Viber" id="vi">
+            <label><strong>Viber</strong></label><br>
+
+            <input type="radio" name="radio" value="SMS" id="sm">
+            <label> <strong>SMS</strong></label><br><br>
+
+            <!--Querry-->
+            <label  class="label"><strong>Please enter your query briefly.</strong></label><br>
+            <input id="query" type="text" class="input" name="query" placeholder="Limit roughly 70 words."> 
+            <br><br><br>
+            <div class="show">
+            <button type="submit" value="submit" id="submit">Submit</button>
+            <span class="showtext"> For info handling click on FAQ</span>
+            </div>  
+            
+            <p id="error"></p>
+
+        </form>
+    </main>
+    <script src="static/scripts/contact.js"></script>
+</body>
+</html>

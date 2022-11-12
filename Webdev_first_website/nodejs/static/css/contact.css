@@ -1,0 +1,65 @@
+
+h3{
+text-align: center;    
+}
+.label{
+    color: black;
+}
+body{
+    text-align: center;
+}
+/* FAQ*/
+.show{
+    position: relative;
+}
+.show .showtext{
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  
+}
+.show:hover .showtext{
+    visibility: visible;
+}
+
+#resize , #resize1, #resize2, #resize3{
+    width: 15%;
+    
+    
+}
+input:hover{
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+input:focus {
+    background-color: lightblue;
+}
+#query{
+    width: 40%;
+    height: 30px;
+}
+#alternative{
+    text-align: center;
+    text-indent: 5%;
+    
+}
+
+/* in smaller screen the input field is still considerably visible */
+@media only screen and (max-width: 800px){
+    #resize, #resize1, #resize2, #resize3{
+        width: 70%;
+    }
+    #query{
+        width: 80%;
+        height: 30px;
+    }
+}
+
